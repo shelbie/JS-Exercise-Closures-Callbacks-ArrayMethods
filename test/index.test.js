@@ -158,7 +158,7 @@ describe("getRunnersByTShirtSize()", () => {
   });
 });
 
-describe("tallyUpDonations() [STRETCH TASK]", () => {
+xdescribe("tallyUpDonations() [STRETCH TASK]", () => {
   it("returns 0 for an empty runners array", () => {
     expect(tallyUpDonations([])).to.equal(0);
   });
@@ -174,7 +174,7 @@ describe("tallyUpDonations() [STRETCH TASK]", () => {
   });
 });
 
-describe("counterMakerWithLimit() [STRETCH TASK]", () => {
+xdescribe("counterMakerWithLimit() [STRETCH TASK]", () => {
   const counter = counterMakerWithLimit(3)
   it("returns a function", () => {
     expect(isFunction(counter)).to.equal(true);
