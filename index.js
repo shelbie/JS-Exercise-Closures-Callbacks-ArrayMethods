@@ -90,7 +90,8 @@ function processLastItem(stringList, callback) {
  * should return 994.
 */
 function processSum(num1, num2, callback) {
-  return callback(num1 + num2)
+  let sum = num1 + num2;
+  return callback(sum)
 }
 
 /**
