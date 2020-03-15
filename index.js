@@ -49,7 +49,6 @@ function processFirstItem(stringList, callback) {
  * should return "There are 0".
 */
 function processLength(list, callback) {
-  // let i = 0; i < list.length; i++;
   return callback(list.length);
 }
 
