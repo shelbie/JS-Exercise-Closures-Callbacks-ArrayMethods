@@ -180,7 +180,7 @@ function lowerCaseStrings(strings) {
  * [2] Invoking `isItAnApple` with `['a', 'b', 'c' ]` will return `[ false, false, false ]`.
 */
 function isItAnApple(strings) {
- newArr = strings.map(e => {
+ let newArr = strings.map(e => {
    if (e === 'apple') {
      return e = true;
    } else {
@@ -206,8 +206,11 @@ function isItAnApple(strings) {
  * 
  * [2] Invoking `removeApple` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
-function removeApple(/* code here */) {
-  /* code here */
+function removeApple(strings) {
+  let newArray = strings.filter((arrItem) => {
+    return (arrItem !== 'apple')
+  })
+  return newArray;
 }
 
 /**
