@@ -228,9 +228,16 @@ function removeApple(strings) {
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash() {
- 
+function stringSmash(strings) {
+let result = strings.reduce(function (strings, val, index) {
+  return strings + val;
+}, '')
+return result;
 }
+
+//https://stackoverflow.com/questions/38270089/reduce-array-to-a-single-string
+
+
 
 // A local community center is holding a fund raising 5k fun run and has invited
 // 50 small businesses to make a small donation on their behalf for some much needed
